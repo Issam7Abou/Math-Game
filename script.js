@@ -243,6 +243,9 @@ function populateGamePage() {
 // Displays 3, 2, 1, GO!
 function countdownStart() {
   let count = 3;
+  setTimeout(() => {
+    countdown.textContent = 'READY!'
+  }, 0);
   const theCountdown = setInterval(() => {
     countdown.textContent = count;
     count--;
